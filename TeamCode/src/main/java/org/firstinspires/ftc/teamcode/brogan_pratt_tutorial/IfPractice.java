@@ -9,6 +9,8 @@ public class IfPractice extends OpMode {
     @Override
     public void init() {
 
+    }
+
 
     @Override
     public void loop() {
