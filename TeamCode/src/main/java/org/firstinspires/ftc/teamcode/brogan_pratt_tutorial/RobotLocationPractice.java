@@ -1,5 +1,4 @@
 package org.firstinspires.ftc.teamcode.brogan_pratt_tutorial;
-
 public class RobotLocationPractice {
     double angle;
     double x;
@@ -11,7 +10,7 @@ public class RobotLocationPractice {
     }
 
     public double getHeading() {
-        // This method normalize robot heading between -180 and 180
+        // This method normalizes robot heading between -180 and 180
         // This is useful for calculating turn angles, especially when crossing the 0, 360 boundary
 
         double angle = this.angle; // copy the raw angle of imu
@@ -24,7 +23,7 @@ public class RobotLocationPractice {
         return angle; // return normalized value
     }
     public void turnRobot(double angleChange) {
-        angle += angleChange;
+        this.angle += angleChange;
     }
 
     public void setAngle(double angle) {
@@ -47,7 +46,7 @@ public class RobotLocationPractice {
         return this.x;
     }
     public void changeY(double changeAmount) {
-        y += changeAmount;
+        this.y += changeAmount;
     }
 
     public void setY(double y) {

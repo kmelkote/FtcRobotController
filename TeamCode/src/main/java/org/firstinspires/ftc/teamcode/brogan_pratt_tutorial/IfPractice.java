@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.brogan_pratt_tutorial;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-@Disabled
+//@Disabled
 @TeleOp
 public class IfPractice extends OpMode {
     @Override
@@ -15,6 +15,8 @@ public class IfPractice extends OpMode {
     @Override
     public void loop() {
 
+        // Exercise 3 in video - see comments at bottom
+
         double motorSpeed = -gamepad1.left_stick_y;
 
         if (!gamepad1.a){
@@ -22,22 +24,23 @@ public class IfPractice extends OpMode {
         }
         telemetry.addData("Left stick value", motorSpeed);
 
-        /*
+
         if (gamepad1.aWasPressed()){
             telemetry.addData("Left stick value", motorSpeed);
         }
         else {
             telemetry.addData("Left stick value", motorSpeed*0.5);
         }
-        */
-        /*
+
+        // Exercise 2 in video
+
         double leftY = - gamepad1.left_stick_y;
         if (leftY < 0.1 && leftY > -0.1){
             telemetry.addData("Left stick", "in Dead Zone");
         }
 
-        */
-        /*
+
+
         if (leftY < 0) {
             telemetry.addData("Left stick", "is Negative");
         }
@@ -50,10 +53,11 @@ public class IfPractice extends OpMode {
         else {
             telemetry.addData("Left stick", "is Zero!");
         }
-        */
-        //telemetry.addData("Left stick value", leftY);
 
-    /*
+        telemetry.addData("Left stick value", leftY);
+
+    // Exercise 1 in video
+
        boolean aButton = gamepad1.a; //press TRUE, else FALSE
 
        if (aButton){
@@ -65,7 +69,7 @@ public class IfPractice extends OpMode {
         }
 
         telemetry.addData("A Button State", aButton);
-    */
+
 
     }
 }
